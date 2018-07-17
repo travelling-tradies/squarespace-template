@@ -27,7 +27,7 @@ $(document).ready(function() {
   })
 
   $(document).on('click', '.su-toggle-tradie', function(){
-    $('.su-toggle-host', '.su-toggle-tradie').addClass(signupFormToggleIsNotActiveClass);
+    $('.su-toggle-host').addClass(signupFormToggleIsNotActiveClass);
     $('.su-toggle-tradie').removeClass(signupFormToggleIsNotActiveClass);
     $('.su-form-host').removeClass(signupFormIsActiveClass);
     $('.su-form-tradie').addClass(signupFormIsActiveClass);
