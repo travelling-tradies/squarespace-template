@@ -1,7 +1,38 @@
 
 /* IT'S DA BOY KODY AT IT AGAIN */
 
+
+
+
 #collection-5b3ad0076d2a7342144af293 {
+
+  #sidecarNav nav {
+    padding: 30% 10% 10%;
+  }
+
+  #sidecarNav nav a {
+    color: #fff;
+    font-size: 25px;
+  }
+
+
+    #sidecarNav nav > div:not(.folder):last-child a {
+          border: 2px solid #fff;
+    }
+
+    #sidecarNav nav > div:not(.folder):last-child a:hover {
+          border: 2px solid #fff;
+          background-color: #fff;
+          color: #d85f1b;
+    }
+
+  /* Remove overlay */
+
+.body-overlay {
+  display: none!important;
+}
+
+/* End Remove overlay */
 
   #header {
     width: 90%;
@@ -534,6 +565,14 @@
 
   @media screen and (max-width: 1000px) {
 
+    #sidecarNav {
+      width: 50%;
+    }
+
+    .lp-intro-max-width {
+      margin: 10%;
+    }
+
     .signup-form {
       width: 95%;
       height: 100%;
@@ -579,6 +618,7 @@
     float: left;
     margin-bottom: 20px;
     margin-top: 40px;
+    font-size: 50px;
     }
 
   .lp-third-inner p {
@@ -603,6 +643,27 @@
     #lp-partners img {
       width: 44%;
       margin: 3%;
+    }
+
+  }
+
+  @media screen and (max-width: 640px) {
+
+    .lp-signup-top {
+      right: 15%;
+    }
+
+    #sidecarNav {
+      width: 100%;
+    }
+
+    .lp-intro-max-width h1 {
+      font-size: 25px;
+    }
+
+    .lp-logo img {
+      width: 80px;
+      height: 80px;
     }
 
   }
@@ -1075,6 +1136,7 @@ body:not(.sqs-edit-mode) .pre-footer-inner .sqs-layout.empty {max-height: 0;}
   background-color: transparent;
   .font-smoothing(@overlayColor);
   position: fixed;
+  z-index: 1003;
 }
 
 body:not(.has-banner-image),
@@ -2089,7 +2151,8 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill {
 
 #sidecarNav {
   position: fixed;
-  width: 260px;
+  width: 30%;
+  background-color: #d85f1b;
   z-index: 1003;
   top: 0;
   right: 0;
@@ -2101,7 +2164,6 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill {
   // we toggle visibility here when it's closed, otherwise
   // the sidecar will stick out below the footer on short pages
   visibility: hidden;
-  background-color: fade(@headerBgColor, 100%);
   .font-smoothing(@headerBgColor);
   .border-box;
   .transition2(height 0s 0.14s linear, visibility 0s 0.14s linear);
@@ -2195,11 +2257,13 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill {
     overflow: auto;
     background-color: fade(@headerBgColor, 100%);
     .border-box;
+
     -webkit-transform: translate3d(260px, 0, 0);
        -moz-transform: translate3d(260px, 0, 0);
         -ms-transform: translate3d(260px, 0, 0);
          -o-transform: translate3d(260px, 0, 0);
             transform: translate3d(260px, 0, 0);
+
     -webkit-transition: -webkit-transform 0s 0s ease-in-out;
     -moz-transition: -moz-transform 0s 0s ease-in-out;
     -ms-transition: -ms-transform 0s 0s ease-in-out;

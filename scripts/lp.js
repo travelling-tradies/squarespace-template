@@ -16,7 +16,7 @@ $(document).ready(function() {
 
   $(document).on('click', '.lp-signup-open', function(){
     $('#signup-opacity').addClass(signupFormOpacityIsActiveClass);
-    $('#signup-outer').addClass(signupIsActiveClass);
+    $('#signup-outer').addClass(signupIsActiveClass); 
   })
 
   $(document).on('click', '.su-toggle-host', function(){
