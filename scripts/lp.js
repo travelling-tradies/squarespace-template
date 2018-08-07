@@ -16,7 +16,7 @@ $(document).ready(function() {
 
   $(document).on('click', '.lp-signup-open', function(){
     $('#signup-opacity').addClass(signupFormOpacityIsActiveClass);
-    $('#signup-outer').addClass(signupIsActiveClass);
+    $('#signup-outer').addClass(signupIsActiveClass); 
   })
 
   $(document).on('click', '.su-toggle-host', function(){
@@ -27,7 +27,7 @@ $(document).ready(function() {
   })
 
   $(document).on('click', '.su-toggle-tradie', function(){
-    $('.su-toggle-host', '.su-toggle-tradie').addClass(signupFormToggleIsNotActiveClass);
+    $('.su-toggle-host').addClass(signupFormToggleIsNotActiveClass);
     $('.su-toggle-tradie').removeClass(signupFormToggleIsNotActiveClass);
     $('.su-form-host').removeClass(signupFormIsActiveClass);
     $('.su-form-tradie').addClass(signupFormIsActiveClass);
