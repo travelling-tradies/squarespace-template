@@ -1,10 +1,77 @@
 
-/* IT'S DA BOY KODY AT IT AGAIN */
+.nav-fixed {
+  position: fixed!important;
+}
+
+/* OLD LANDING PAGE */
 
 
+#collection-5ad707cbf950b724bbde6c6b {
 
+  .banner-thumbnail-wrapper {
+    height: auto;
+  }
+
+  .desc-wrapper p {
+    float: left;
+    width: 100%;
+  }
+
+  .desc-wrapper {
+    padding: 12% 5%;
+  }
+
+}
+
+
+/* NEW LANDING PAGE */
 
 #collection-5b3ad0076d2a7342144af293 {
+
+  #sidecarNav nav > div:not(.folder):last-child a {
+        border: 2px solid #fff;
+        padding: 16px 20px;
+  }
+
+  #sidecarNav nav > div:not(.folder):last-child a:hover {
+        border: 2px solid #fff;
+        background-color: #fff;
+        color: #d85f1b;
+  }
+
+  #sidecarNav {
+    width: auto;
+    top: auto;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: block;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    .border-box;
+    .top-bar,
+    .middle-bar,
+    .bottom-bar {
+      background-color: #fff;
+    }
+  }
+
+
+  .mobile-nav-toggle {
+    position: absolute;
+    top: 74px;
+    right: 50px;
+  }
+
+  .header-inner {
+    padding: 0;
+  }
 
   #page {
     width: 100%;
@@ -26,17 +93,6 @@
     font-size: 25px;
   }
 
-
-    #sidecarNav nav > div:not(.folder):last-child a {
-          border: 2px solid #fff;
-    }
-
-    #sidecarNav nav > div:not(.folder):last-child a:hover {
-          border: 2px solid #fff;
-          background-color: #fff;
-          color: #d85f1b;
-    }
-
   /* Remove overlay */
 
 .body-overlay {
@@ -46,13 +102,14 @@
 /* End Remove overlay */
 
   #header {
-    width: 90%;
+    width: 100%;
   }
 
    #content {
     max-width: 100%!important;
     margin: auto;
     padding: 0;
+    width: 100%;
   }
 
   .field-list  {
@@ -65,11 +122,27 @@
   }
 
   .lp-signup-top {
-    position: fixed;
-    top: 8.5%;
-    right: 10%;
+    position: absolute;
+    top: 62px;
+    right: 120px;
     z-index: 999;
+    display: none;
   }
+
+  .lp-signup-tradie, .lp-signup-host,  {
+    position: absolute;
+    z-index: 999;
+    display: block;
+    top: 62px;
+    right: 120px;
+  }
+
+  .lp-signup-tradie,  {
+    top: 62px;
+    right: 320px;
+  }
+
+
 
   .lp-signup-open {
     cursor: pointer;
@@ -86,9 +159,9 @@
   }
 
   .lp-logo {
-    position: fixed;
-    left: 5%;
-    top: 5%;
+    position: absolute;
+    left: 50px;
+    top: 28px;
     z-index: 999;
   }
 
@@ -294,7 +367,7 @@
     cursor: pointer;
     position: absolute;
     top: 5%;
-    right: 5%;
+    left: 5%;
   }
 
   .su-exit img {
@@ -348,14 +421,28 @@
   }
 
   .lp-button, button {
-    border: solid 2px #d85f1b;
-    color: #d85f1b;
+    border: solid 2px #fff;
+    color: #fff;
     padding: 10px 26px;
     font-size: 20px;
     font-weight: 600;
     font-family: proxima-nova;
     text-transform: uppercase;
     text-align: center;
+  }
+
+  #block-yui_3_17_2_1_1530583801277_41235 {
+    .lp-button {
+      border: solid 2px #d85f1b;
+      color: #d85f1b;
+    }
+  }
+
+  #signup-outer {
+    .lp-button {
+      border: solid 2px #d85f1b;
+      color: #d85f1b;
+    }
   }
 
   .sqs-system-button {
@@ -386,9 +473,9 @@
   }
 
   .lp-button:hover {
-    background-color: #d85f1b;
-    color: #fff;
-    border: solid 2px #d85f1b;
+    background-color: #fff;
+    color: #000;
+    border: solid 2px #fff;
   }
 
   #lp-mh {
@@ -436,6 +523,12 @@
 
   #lp-partners img {
     width: 19%;
+    margin: 3%;
+    float: left;
+  }
+
+  #lp-partners img.double-partner {
+    width: 38%;
     margin: 3%;
     float: left;
   }
@@ -576,6 +669,34 @@
 
   @media screen and (max-width: 1000px) {
 
+    .mobile-only {
+      display: block;
+    }
+
+    .desktop-only {
+      display: none;
+    }
+
+    .lp-signup-tradie {
+      right: 290px;
+    }
+
+    .lp-signup-host {
+      right: 84px;
+    }
+
+    .banner-thumbnail-wrapper {
+      height: 80vh;
+    }
+
+    #lp-mh .lp-mh-top span {
+      font-size: 40px;
+    }
+
+    .mobile-nav-toggle {
+      right: 30px;
+    }
+
     #sidecarNav {
       width: 50%;
     }
@@ -660,8 +781,17 @@
 
   @media screen and (max-width: 640px) {
 
+    .lp-signup-tradie, .lp-signup-host {
+      display: none!important;
+    }
+
+    .lp-logo {
+      left: 27px;
+    }
+
     .lp-signup-top {
-      right: 15%;
+      right: 77px;
+      display: block;
     }
 
     #sidecarNav {
@@ -1260,6 +1390,7 @@ body:not(.has-banner-image),
   max-width: @pageWidthNarrow;
   margin: auto;
   padding: 5%;
+  width: 90%;
 }
 
 #folderNav,
@@ -1701,7 +1832,7 @@ li.filter {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 30vh;
+  height: 38vh;
   padding: 0!important;
 }
 
@@ -2210,10 +2341,10 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill {
   .mobile-nav-toggle {
     display: block;
     .border-box;
-      z-index: 1002;
-      position: fixed;
-      top: 10%;
-      right: 5%;
+      z-index: 1005;
+      position: absolute;
+      top: 80px;
+      right: 50px;
       margin-top: -8px;
       padding: 0;
       vertical-align: middle;
@@ -2229,7 +2360,7 @@ body:not(.collection-type-gallery).banner-button-corner-style-pill {
     .bottom-bar {
       width: 22px;
       height: 2px;
-      background-color: #fff;
+      background-color: #000;
       -webkit-transition: -webkit-transform 0.1s 0s ease-in-out, top 0.1s 0.1s ease-in-out;
          -moz-transition: -moz-transform 0.1s 0s ease-in-out, top 0.1s 0.1s ease-in-out;
           -ms-transition: -ms-transform 0.1s 0s ease-in-out, top 0.1s 0.1s ease-in-out;
