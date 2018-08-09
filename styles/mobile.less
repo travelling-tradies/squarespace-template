@@ -447,11 +447,11 @@
 		.border-box;
 		z-index: 100;
 		width: 10%;
-		position: fixed;
+		position: absolute;
 		z-index: 1002;
-		top: 10%;
+		top: 40px;
+    right: 40px;
 		right: @mobilePadding;
-		margin-top: -8px;
 		padding: 0;
 		vertical-align: middle;
 		line-height: 16px;
@@ -466,7 +466,7 @@
     .bottom-bar {
       width: 22px;
       height: 2px;
-      background-color: #fff;
+      background-color: #000;
 			-webkit-transition: -webkit-transform 0.15s 0s ease-in-out, top 0.15s 0.15s ease-in-out;
 			-moz-transition: -moz-transform 0.15s 0s ease-in-out, top 0.15s 0.15s ease-in-out;
 			-ms-transition: -ms-transform 0.15s 0s ease-in-out, top 0.15s 0.15s ease-in-out;
@@ -549,6 +549,8 @@
 
 		#sidecarNav {
 	    visibility: visible;
+      width: 100%;
+      top: 90px;
       .transition2(height 0s 0.14s linear, visibility 0s 0s linear);
 		}
 		#siteWrapper {
